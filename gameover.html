@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<title>2048 - GAME OVER!</title>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+               
+    </head>
+    <body>
+		<div id="gover">GAME OVER!</div>
+		<div id="your-score"></div>
+		<script>
+			var url = window.location.href;
+			var score = url.substring(url.indexOf("=") + 1);  
+			document.getElementById("your-score").innerHTML = "Your score: " + score;
+		</script>
+		<div id="try-again" onclick="location.href='index.html';">TRY AGAIN</div>
+    </body>
+</html> 
